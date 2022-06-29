@@ -8,9 +8,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
-
+header {
+  text-align: center;
+}
 .container {
   max-width: 80rem;
   margin: auto;
   padding: 3rem 2rem;
+}
+section p {
+  font-size: 1rem;
+  font-family: cursive;
+  background: red;
+  color: #333;
+  padding: 1rem;
 }
