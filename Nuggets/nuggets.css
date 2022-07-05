@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Splash&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "splash ", cursive;
+  /* font-family: "Mochiy Pop P One", sans-serif; */
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  overflow: auto;
+}
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.main-section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#myForm {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 80rem;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 75px;
+}
+.container h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: -40px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container h1::before {
+  background: #1c92d2;
+  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
+  background: linear-gradient(to right, #f2fcfe, #1c92d2);
+
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50;
+  height: 3px;
+  width: 30px;
+}
+#myForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 10px;
+}
+#myForm label {
+  display: block;
+}
+
+#myForm .box input {
+  padding: 10px;
+  margin: 20px 0 12px 0;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+#myForm .box input:focus,
+#myForm .box input:valid {
+  border-color: #c471ed;
+}
+
+.genderCheck h1 {
+  font-size: 32px;
+}
+.gender {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+.gender label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.gender label .Dot {
+  background-color: #ccc;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+#dot-1:checked ~ .gender label .one,
+#dot-2:checked ~ .gender label .two,
+#dot-3:checked ~ .gender label .three {
+  background-color: #c471ed;
+  border-color: #f64f59;
+}
+.genderCheck input[type="radio"] {
+  display: none;
+}
+.genderCheck .btn input {
+  padding: 10px 20px;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  color: #fff;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 50%;
+
+  margin: 10px 85px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn input:hover {
+  background: #d427ae;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  #myForm {
+    margin-top: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    /* margin-bottom: 15px; */
+  }
+  #myForm::-webkit-scrollbar {
+    width: 0;
+  }
+}

@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --green-blue-crayola: hsl(202, 75%, 47%);
+  --prussian-blue: hsl(202, 72%, 15%);
+  --eerie-black: hsl(210, 11%, 15%);
+  --dark-orange: hsl(32, 100%, 50%);
+  --alice-blue: hsl(203, 100%, 97%);
+  --light-gray: hsl(0, 0%, 80%);
+  --indigo-dye: hsl(202, 64%, 26%);
+  --cultured-1: hsl(0, 0%, 94%);
+  --cultured-2: hsl(0, 0%, 95%);
+  --cultured-3: hsl(0, 0%, 95%);
+  --plutinum: hsl(0, 0%, 91%);
+  --black_60: hsla(0, 0%, 0%, 0.6);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --onyx: hsl(0, 0%, 24%);
+}
+body {
+  min-height: 100vh;
+  background-color: #800080;
+}
+header {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #3a043b;
+
+  text-align: center;
+  padding: 2rem;
+}
+.container {
+  background-color: #ffc0cb;
+  color: white;
+  color: #333;
+  max-width: 32rem;
+  padding: 30px;
+  margin: 100px auto;
+}
+.container h1 {
+  text-align: center;
+  margin-block: 10px;
+  margin-top: -5px;
+  font-size: 32px;
+}
+.container h1::before {
+  background: #3a043b;
+  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
+  background: linear-gradient(to right, #f2fcfe, #1c92d2);
+}
+#my-form {
+  /* background-color: var(--green-blue-crayola); */
+  padding: 2rem;
+}
+#my-form label input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-block: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  outline: 0;
+}
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+.btn input {
+  background: #800080; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc0cb,
+    #800080
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc0cb,
+    #800080
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  outline: 0;
+}
+.genderDetails .gender-box {
+  /* background-color: red; */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 25rem;
+  }
+  .wrapper {
+    display: inline-block;
+  }
+}

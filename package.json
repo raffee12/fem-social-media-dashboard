@@ -1,0 +1,26 @@
+{
+  "name": "tightrope",
+  "version": "1.0.0",
+  "description": "SomeThing I'm Doing randomly",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raffee12/fem-social-media-dashboard.git"
+  },
+  "author": "Rafiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raffee12/fem-social-media-dashboard/issues"
+  },
+  "homepage": "https://github.com/raffee12/fem-social-media-dashboard#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
